@@ -1,4 +1,4 @@
- from django.shortcuts import render
+from django.shortcuts import render
 
 # Create your views here.
 from .models import Meals
@@ -6,7 +6,11 @@ from .models import Meals
 def meal_list(request):
     meal_list = Meals.objects.all()
 
-    return render(request, 'Meal/list.html', context)
+    context = {
+        "meals": meal_list
+    }
+
+    return render(request, 'meals/list.html', context)
 
 
 
