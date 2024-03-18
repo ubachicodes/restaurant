@@ -3,5 +3,5 @@ from .views import Index
 
 
 urlpatterns = [
-    path
+    path(r'^$'),
 ]
