@@ -88,6 +88,176 @@ body.active {
     background-color: var(--cultured);
 }
 
+
+/* Reused Style */
+
+.container { padding-inline: 15px; }
+
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: 'Rubik', sans-serif;
+  color: rgba(0, 0, 0, 1);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.h1,
+.h2 { 
+    font-size: 3.2rem; 
+}
+
+.h2,
+.h3,
+.h4 { 
+    font-weight: 600; 
+}
+
+.h3 { 
+    font-size: 2.2rem; 
+}
+
+.h4 { 
+    font-size: 1.8rem; 
+}
+
+.btn {
+  background-color: rgba(255, 153, 51, 1);
+  color:  rgba(255, 255, 255, 1);
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  height: var(--height, 45px);
+  padding-inline: 35px;
+  transition: 0.25s ease;
+}
+
+.btn-hover {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-hover::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 20px;
+  width: 1px;
+  height: 1px;
+  transform: translate(-50%, 51%) scale(var(--scale, 1));
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: -1;
+  transition: 0.5s ease;
+}
+
+.btn-hover:is(:hover, :focus)::after { --scale: 500; }
+
+.section { 
+    padding-block: 60px; 
+}
+
+.section.white { 
+    background-color: rgba(244, 240, 236, 1); 
+}
+
+.section-divider { position: relative; }
+
+.section-divider::before,
+.section-divider::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-repeat: repeat no-repeat;
+  background-position: bottom;
+}
+
+.section-divider.white::after { 
+    background-image: url("../images/shape-white.png"); 
+}
+
+.section-divider.gray::after { 
+    background-image: url("../images/shape-grey.png"); 
+}
+
+.w-100 { 
+    width: 100%; 
+}
+
+.has-scrollbar {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: inline mandatory;
+  padding-block-end: 40px;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+    height: 12px; 
+}
+
+.has-scrollbar::-webkit-scrollbar-button { 
+    width: calc(25% - 40px); 
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  outline: 2px solid rgba(255, 153, 51, 1);
+  border-radius: 50px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  border: 3px solid rgba(238, 238, 238, 1);
+  border-radius: 50px;
+}
+
+.section-title > .span {
+  display: inline-block;
+  color: rgba(255, 153, 51, 1);
+}
+
+.abs-img {
+  position: absolute;
+  transform: scale(1);
+}
+
+.scale-up-anim {
+    animation: scaleUp 1s linear infinite alternate;
+}
+
+@keyframes scaleUp {
+  0% { transform: scale(1);}
+  100% { transform: scale(1.05); }
+}
+
+.section-subtitle {
+  color: rgba(204, 0, 0, 1);
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+.badge {
+  position: absolute;
+  background: rgba(204, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 2px 15px;
+}
+
+.rating-wrapper {
+  display: flex;
+  gap: 5px;
+  color: rgba(255, 153, 51, 1);
+}
+
+
+
 /* Header*/
 
 .header-btn-broup .btn {
@@ -114,7 +284,7 @@ body.active {
     position: fixed;
     top: -86px;
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: var(--shadow-1);
+    box-shadow: 0 1px 4px hsla(0, 0%, 0%, 0.2);
     animation: slideIn 0.5s ease-out forwards;
 }
 
@@ -300,3 +470,47 @@ body.active {
     cursor: url("nourish/templates/assets/images/close.png"), auto;
 }
   
+
+/* Hero */
+
+.hero-banner { 
+    display: none; 
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-block: 145px 60px;
+  text-align: center;
+}
+
+.hero-subtitle {
+  color: rgba(255, 102, 0, 1);
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  margin-block-end: 25px;
+}
+
+.hero-title {
+  color: rgba(238, 204, 193, 0.2);
+  max-width: 12ch;
+  margin-inline: auto;
+}
+
+.hero-text {
+  color: rgba(223, 190, 164, 1);
+  margin-block: 15px 30px;
+  max-width: 44ch;
+  margin-inline: auto;
+}
+
+.hero .btn { 
+    margin-inline: auto; 
+}
+
+.hero .btn:is(:hover, :focus) {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+}
