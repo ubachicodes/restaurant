@@ -575,3 +575,65 @@ body.active {
     min-width: 100%;
     scroll-snap-align: start;
 }
+
+
+/* About */
+
+.about { 
+    text-align: center; 
+}
+
+.about-banner {
+  position: relative;
+  aspect-ratio: 1 / 0.9;
+}
+
+.about-img {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.about-banner .abs-img {
+  top: 0;
+  left: 100px;
+}
+
+.about .section-title {
+  max-width: 15ch;
+  margin-block: 40px 10px;
+  margin-inline: auto;
+}
+
+.about-list { 
+    margin-block: 20px 30px; 
+}
+
+.about-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-item:not(:last-child) { 
+    margin-block-end: 10px; 
+}
+
+.about-item ion-icon {
+  background-color: rgba(255, 153, 51, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.2rem;
+  padding: 4px;
+  border-radius: 50%;
+  --ionicon-stroke-width: 110px;
+}
+
+.about-item .span {
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+.about .btn { 
+    margin-inline: auto; 
+}
