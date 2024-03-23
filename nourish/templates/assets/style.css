@@ -637,3 +637,138 @@ body.active {
 .about .btn { 
     margin-inline: auto; 
 }
+
+
+/* Food Menu */
+
+.food-menu {
+    background-color: rgba(244, 240, 236, 1);
+    text-align: center;
+}
+  
+.food-menu .section-title { 
+    margin-block: 10px 20px; 
+}
+  
+.food-menu .section-text {
+    max-width: 44ch;
+    margin-inline: auto;
+    margin-block-end: 30px;
+}
+  
+.fiter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-block-end: 40px;
+}
+  
+  .filter-btn {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    padding: 5px 20px;
+    border: 1px solid var(--border-color, rgba(238, 238, 238, 1));
+  }
+  
+.filter-btn.active {
+    background-color: rgba(255, 153, 51, 1);
+    --color: rgba(255, 255, 255, 1);
+    --border-color: rgba(255, 153, 51, 1);
+}
+  
+.food-menu-list {
+    display: grid;
+    gap: 30px;
+}
+  
+.food-menu-card {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 40px;
+    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.2);
+}
+  
+.food-menu-card:focus-within { 
+    outline: 1px auto -webkit-focus-ring-color; 
+}
+  
+.food-menu-card .card-banner {
+    position: relative;
+    padding-block-start: 30px;
+    max-width: max-content;
+    aspect-ratio: 1 / 1;
+    margin-inline: auto;
+}
+  
+.food-menu-card .badge {
+    top: 0;
+    left: 0;
+}
+  
+.food-menu-btn {
+    position: absolute;
+    top: calc(50% + 15px);
+    left: 50%;
+    transform: translate(-50%, 0);
+    min-width: max-content;
+    --bg-color: rgba(204, 0, 0, 1);
+    width: 60%;
+    --height: 40px;
+    --padding-inline: 20px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+  
+.food-menu-btn:is(:hover, :focus) { 
+    --bg-color: rgba(255, 153, 51, 1);
+}
+  
+.food-menu-card:is(:hover, :focus-within) .food-menu-btn {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+  
+.food-menu-card .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-block: 20px 10px;
+}
+  
+.food-menu-card .category {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+  
+.food-menu-card .rating-wrapper { 
+    font-size: 1.4rem; 
+}
+  
+.food-menu-card .card-title { 
+    margin-block-end: 10px; 
+}
+  
+.food-menu-card .price-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+  
+.food-menu-card .price-text {
+    color: rgba(204, 0, 0, 1);
+    text-transform: uppercase;
+    padding-inline-end: 5px;
+}
+  
+.food-menu-card .price { 
+    color: rgba(255, 153, 51, 1); 
+}
+  
+.food-menu-card .del { 
+    color: rgba(187, 187, 187, 1); 
+}
