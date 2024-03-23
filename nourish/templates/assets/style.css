@@ -772,3 +772,57 @@ body.active {
 .food-menu-card .del { 
     color: rgba(187, 187, 187, 1); 
 }
+
+/* Reviews */
+
+.testi { 
+    text-align: center; 
+}
+
+.testi .section-title { 
+    margin-block: 10px 20px; 
+}
+
+.testi .section-text {
+  max-width: 44ch;
+  margin-inline: auto;
+  margin-block-end: 30px;
+}
+
+.testi-card {
+  background-color:  rgba(255, 255, 255, 1);
+  padding: 40px;
+  text-align: left;
+  box-shadow:  0 1px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+.testi-card .profile-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testi-card .avatar {
+  min-width: max-content;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testi-card .testi-name { 
+    margin-block-end: 2px; 
+}
+
+.testi-card .testi-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.4rem;
+}
+
+.testi-card .testi-text { 
+    margin-block: 20px 15px; 
+}
+
+.testi-item {
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+
