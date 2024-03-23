@@ -8,16 +8,16 @@
 
   <!---favicon-->
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="{% static 'nourish/static/site_static/faviconio-logo/logo.png' %}" type="image/x-icon">
 
   <!---CSS-->
 
-  <link rel="stylesheet" href="frontend/assets/style.css">
+  <link rel="stylesheet" href="{% static 'nourish/static/site_static/style.css' %}">
 
   <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href="nourish/templates/assets/images/hero-banner.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="{% static 'nourish/templates/assets/images/hero-banner.png' %}" media="min-width(768px)">
   <link rel="preload" as="image" href="nourish/templates/assets/images/hero-banner-bg.png" media="min-width(768px)">
   <link rel="preload" as="image" href="nourish/templates/assets/images/hero-bg.jpg">
 </head>
@@ -285,350 +285,6 @@
         </div>
       </section>
 
-      <!-- About -->
-
-      <section class="section section-divider gray about" id="about">
-        <div class="container">
-
-          <div class="about-banner">
-            <img src="nourish/templates/assets/images/about-banner.png" width="509" height="459" loading="lazy"
-              alt="Burger with Drinks" class="w-100 about-img">
-
-            <img src="nourish/templates/assets/images/sale-shape-red.png" width="216" height="226"
-              alt="get up to 50% off now" class="abs-img scale-up-anim">
-          </div>
-
-          <div class="about-content">
-
-            <h2 class="h2 section-title">
-              Desserts, Burgers, and Best Pizzas
-              <span class="span">in Town!</span>
-            </h2>
-
-            <p class="section-text">
-              Located in the heart of Wales, the Capital City Cardiff, Nourish Restaurant is a haven for food
-              enthusiasts seeking wholesome, flavorful dishes that nourish both
-              body and soul. With a commitment to using locally sourced, seasonal ingredients, our culinary team crafts
-              each dish with care, ensuring freshness and quality in every bite. From vibrant salads bursting with color
-              to hearty mains bursting with flavor, our menu caters to diverse palates and dietary preferences.
-            </p>
-
-            <ul class="about-list">
-
-              <li class="about-item">
-                <ion-icon name="checkmark-outline"></ion-icon>
-
-                <span class="span">Delicious & Healthy Foods</span>
-              </li>
-
-              <li class="about-item">
-                <ion-icon name="checkmark-outline"></ion-icon>
-
-                <span class="span">Specific Family And Kids Zone</span>
-              </li>
-
-              <li class="about-item">
-                <ion-icon name="checkmark-outline"></ion-icon>
-
-                <span class="span">Music & Other Facilities</span>
-              </li>
-
-              <li class="about-item">
-                <ion-icon name="checkmark-outline"></ion-icon>
-
-                <span class="span">Fastest Food Home Delivery</span>
-              </li>
-
-            </ul>
-
-            <button class="btn btn-hover">Order Now</button>
-
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Food Menu -->
-
-      <section class="section food-menu" id="food-menu">
-        <div class="container">
-
-          <p class="section-subtitle">Popular Dishes</p>
-
-          <h2 class="h2 section-title">
-            Our Delicious <span class="span">Foods</span>
-          </h2>
-
-          <p class="section-text">
-            Explore our diverse menu, curated with passion and flavor in every dish.
-          </p>
-
-          <ul class="fiter-list">
-
-            <li>
-              <button class="filter-btn  active">All</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Pizza</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Drinks</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Burgers</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Desserts</button>
-            </li>
-
-          </ul>
-
-          <ul class="food-menu-list">
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="nourish/templates/assets/images/salmon-518032_1280.jpg" width="300" height="300"
-                    loading="lazy" alt="Salmon with salad" class="w-100">
-
-                  <div class="badge">-15%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Salads</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Salmon With Salad</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price">£13.00</data>
-
-                  <del class="del" value="29.00">£29.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="nourish/templates/assets/images/burger-5374792_1280.jpg" width="300" height="300"
-                    loading="lazy" alt="Gourmet burger and fries" class="w-100">
-
-                  <div class="badge">-10%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Burgers</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Gourmet Burger</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="15.00">£15.00</data>
-
-                  <del class="del">£25.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="nourish/templates/assets/images/pizza-3007395_1280.jpg" width="300" height="300"
-                    loading="lazy" alt="Large sliced pizza" class="w-100">
-
-                  <div class="badge">-25%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Pizzas</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Meat Feast Pizzas</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="19.00">£19.00</data>
-
-                  <del class="del">£39.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="nourish/templates/assets/images/pancakes-1984716_1280.jpg" width="300" height="300"
-                    loading="lazy" alt="Pancakes" class="w-100">
-
-                  <div class="badge">-20%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Desserts</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Pancakes</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="9.00 ">£9.00</data>
-
-                  <del class="del">£19.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="nourish/templates/assets/images/cocktail-3329414_1280.jpg" width="300" height="300"
-                    loading="lazy" alt="Cocktails" class="w-100">
-
-                  <div class="badge">-5%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Drinks</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Fruity Cocktails</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="10.00">£10.00</data>
-
-                  <del class="del">£25.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="nourish/templates/assets/images/pasta-1463934_1280.jpg" width="300" height="300"
-                    loading="lazy" alt="Cheesy Pasta" class="w-100">
-
-                  <div class="badge">-15%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Pasta</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Cheesy Pasta</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="15.00">£15.00</data>
-
-                  <del class="del">£29.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-
-        </div>
-      </section>
-
       <!-- Reviews -->
 
       <section class="section section-divider white testi">
@@ -653,7 +309,8 @@
                 <div class="profile-wrapper">
 
                   <figure class="avatar">
-                    <img src="nourish/templates/assets/images/avatar-1.jpg" width="80" height="80" loading="lazy" alt="Robert William">
+                    <img src="nourish/templates/assets/images/avatar-1.jpg" width="80" height="80" loading="lazy"
+                      alt="Robert William">
                   </figure>
 
                   <div>
@@ -685,7 +342,8 @@
                 <div class="profile-wrapper">
 
                   <figure class="avatar">
-                    <img src="nourish/templates/assets/images/avatar-2.jpg" width="80" height="80" loading="lazy" alt="Thomas Josef">
+                    <img src="nourish/templates/assets/images/avatar-2.jpg" width="80" height="80" loading="lazy"
+                      alt="Thomas Josef">
                   </figure>
 
                   <div>
@@ -717,7 +375,8 @@
                 <div class="profile-wrapper">
 
                   <figure class="avatar">
-                    <img src="nourish/templates/assets/images/avatar-3.jpg" width="80" height="80" loading="lazy" alt="Charles Richard">
+                    <img src="nourish/templates/assets/images/avatar-3.jpg" width="80" height="80" loading="lazy"
+                      alt="Charles Richard">
                   </figure>
 
                   <div>
@@ -738,169 +397,6 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star"></ion-icon>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-       <!-- Blog -->
-
-      <section class="section section-divider white blog" id="blog">
-        <div class="container">
-
-          <p class="section-subtitle">Latest Blog Posts</p>
-
-          <h2 class="h2 section-title">
-            This Is All About <span class="span">Foods</span>
-          </h2>
-
-          <p class="section-text">
-            Explore our diverse menu, curated with passion and flavor in every dish.
-          </p>
-
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card">
-
-                <div class="card-banner">
-                  <img src="nourish/templates/assets/images/pizza-2589575_1280.jpg" width="600" height="390" loading="lazy"
-                    alt="What Do You Think About Cheese Pizza Recipes?" class="w-100">
-
-                  <div class="badge">Pizza</div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="card-meta-wrapper">
-
-                    <a href="#" class="card-meta-link">
-                      <ion-icon name="calendar-outline"></ion-icon>
-
-                      <time class="meta-info" datetime="2024-01-01">Jan 01 2024</time>
-                    </a>
-
-                    <a href="#" class="card-meta-link">
-                      <ion-icon name="person-outline"></ion-icon>
-
-                      <p class="meta-info">Esther Njoku</p>
-                    </a>
-
-                  </div>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">What Do You Think About Cheese Pizza Recipes?</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Dive into our latest blog post for culinary inspiration, behind-the-scenes insights, and delicious recipes to tantalize your taste buds...
-                  </p>
-
-                  <a href="#" class="btn-link">
-                    <span>Read More</span>
-
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <div class="card-banner">
-                  <img src="nourish/templates/assets/images/chicken-2509164_1280.jpg" width="600" height="390" loading="lazy"
-                    alt="Making Chicken Strips With New Delicious Ingridents." class="w-100">
-
-                  <div class="badge">Burger</div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="card-meta-wrapper">
-
-                    <a href="#" class="card-meta-link">
-                      <ion-icon name="calendar-outline"></ion-icon>
-
-                      <time class="meta-info" datetime="2022-01-01">Jan 01 2022</time>
-                    </a>
-
-                    <a href="#" class="card-meta-link">
-                      <ion-icon name="person-outline"></ion-icon>
-
-                      <p class="meta-info">Jonathan Smith</p>
-                    </a>
-
-                  </div>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Making Chicken Strips With New Delicious Ingridents.</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Dive into our latest blog post for culinary inspiration, behind-the-scenes insights, and delicious recipes to tantalize your taste buds...
-                  </p>
-
-                  <a href="#" class="btn-link">
-                    <span>Read More</span>
-
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <div class="card-banner">
-                  <img src="nourish/templates/assets/images/restaurant-4832652_1280.jpg" width="600" height="390" loading="lazy"
-                    alt="Innovative Hot Chessyraw Pasta Make Creator Fact." class="w-100">
-
-                  <div class="badge">Chicken</div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="card-meta-wrapper">
-
-                    <a href="#" class="card-meta-link">
-                      <ion-icon name="calendar-outline"></ion-icon>
-
-                      <time class="meta-info" datetime="2022-01-01">Jan 01 2022</time>
-                    </a>
-
-                    <a href="#" class="card-meta-link">
-                      <ion-icon name="person-outline"></ion-icon>
-
-                      <p class="meta-info">David Reign</p>
-                    </a>
-
-                  </div>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Innovative Hot Chessyraw Pasta Make Creator Fact.</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Dive into our latest blog post for culinary inspiration, behind-the-scenes insights, and delicious recipes to tantalize your taste buds...
-                  </p>
-
-                  <a href="#" class="btn-link">
-                    <span>Read More</span>
-
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
-
                 </div>
 
               </div>
@@ -974,7 +470,7 @@
           </li>
 
           <li>
-            <address class="footer-list-item">153 Williamson Plaza, Maggieberg, MT 09514</address>
+            <address class="footer-list-item">153 Queen Street, Cardiff, CF10 23P</address>
           </li>
 
         </ul>
@@ -1060,7 +556,7 @@
 
 
   <!--JS link-->
-  <script src="frontend/script.js"></script>
+  <script src="nourish/static/site_static/script.js"></script>
 
   <!-- ion-icon link-->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
