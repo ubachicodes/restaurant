@@ -10,7 +10,7 @@ def meal_list(request):
         "meals": meal_list
     }
 
-    return render(request, 'meals/list.html', context)
+    return render(request, 'menu.html', {'menu_items': menu_items})
 
 
 
