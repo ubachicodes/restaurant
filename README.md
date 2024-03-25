@@ -1,4 +1,5 @@
 <img src="nourish/static/site_static/faviconio-logo/logo.png" alt="Nourish Restaurant Logo" width="200"> 
+
 # Nourish Restaurant
 
 Nourish Restaurant is an innovative platform designed to revolutionize the dining experience for health-conscious individuals in urban areas. Our goal is to provide a convenient and sustainable solution for those seeking nutritious and delicious meals on-the-go. Targeted primarily at busy professionals and fitness enthusiasts, Nourish Restaurant offers a diverse menu of fresh, organic, and locally sourced dishes that cater to various dietary preferences, including vegan, gluten-free, and low-carb options. Our intuitive platform allows users to easily browse our menu, place orders for pickup or delivery, and even customize their meals to suit their individual preferences.
