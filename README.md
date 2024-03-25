@@ -88,6 +88,7 @@ The Nourish Restaurant website was deployed using Heroku App. Follow these steps
 
 - Instructions on form validation implementation on the Sign Up page were derived from a specific YouTube tutorial.
 - Some front end code was derived from a specific Youtube tutorial with the source code found [here] (https://github.com/codewithsadee/foodie)
+- Planning of this project was done using Github Kanban which can be found [here] (https://github.com/users/ubachicodes/projects/3) also my Issues/Milestones are documented [here] (https://github.com/ubachicodes/restaurant/issues).
   
 ### Media
 
