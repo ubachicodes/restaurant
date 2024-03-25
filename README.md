@@ -1,4 +1,4 @@
-![Nourish Restaurant Logo]<img src="nourish/static/site_static/faviconio-logo/logo.png" alt="Nourish Restaurant Logo" width="200"> 
+<img src="nourish/static/site_static/faviconio-logo/logo.png" alt="Nourish Restaurant Logo" width="200"> 
 # Nourish Restaurant
 
 Nourish Restaurant is an innovative platform designed to revolutionize the dining experience for health-conscious individuals in urban areas. Our goal is to provide a convenient and sustainable solution for those seeking nutritious and delicious meals on-the-go. Targeted primarily at busy professionals and fitness enthusiasts, Nourish Restaurant offers a diverse menu of fresh, organic, and locally sourced dishes that cater to various dietary preferences, including vegan, gluten-free, and low-carb options. Our intuitive platform allows users to easily browse our menu, place orders for pickup or delivery, and even customize their meals to suit their individual preferences.
@@ -74,12 +74,12 @@ The Nourish Restaurant website is meticulously crafted to provide an enriching e
 
 ## Deployment
 
-The Nourish Restaurant website was deployed using GitHub Pages. Follow these steps to deploy the site:
+The Nourish Restaurant website was deployed using Heroku App. Follow these steps to deploy the site:
 
-1. In the GitHub repository, navigate to the Settings tab.
-2. From the source section drop-down menu, select the Master Branch.
-3. Once the master branch is selected, the page will be automatically refreshed to display a detailed ribbon indicating the successful deployment.
-4. The live link to the deployed site can be found [here](https://your-github-username.github.io/love-running/index.html).
+1. In the Deploy tab on Heroku, link Github repo.
+2. Once the correct repo is linked, scroll down an click 'Deploy Branch' to begin deployment.
+3. If all goes right you will see 'Your app was successfully deployed', click 'View' underneath to display live site.
+3. The live link to the deployed site can be found [here](https://nourish1-e4f3558963a4.herokuapp.com/).
 
 ## Credits
 
