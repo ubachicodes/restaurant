@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-ubachicodes-restaurant-uhty911o6gg.ws-eu110.gitpod.io', '.herokuapp.com']
-
+CSRF_TRUSTED_ORIGINS = ['https://8000-ubachicodes-restaurant-uhty911o6gg.ws-eu110.gitpod.io']
 
 # Application definition
 
@@ -48,9 +48,12 @@ INSTALLED_APPS = [
     'meals',
     'home',
     'about',
-    'blog',
     'reservation',
+
+    'crispy_forms',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
