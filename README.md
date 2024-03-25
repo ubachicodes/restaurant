@@ -16,6 +16,20 @@ Join us on our mission to redefine fast food and empower individuals to make hea
 
 The mockups for this project are meant to showcase the responsive design and layout of my website across various devices and screen sizes. However, due to some bugs that were unresolved, I am only able to provide thThese visual representations provide a glimpse into how my accuratly site adapts to different resolutions, ensuring an optimal user experience regardless of whether it's accessed on a desktop, tablet, or smartphone. Ultimately, by meticulously designing and testing these mockups, we aim to demonstrate our commitment to usability and accessibility, ultimately enhancing the overall functionality and appeal of our website.
 
+## FrontEnd/UI/UX Design
+
+I planned out the pages of my website andcreated the wireframes using Balsamiq to bring them to life: 
+
+<img src="nourish/static/site_static/images/Screenshot 2024-03-25 092256.png" alt="Home Page wireframe" width="500">
+
+<img src="nourish/static/site_static/images/Screenshot 2024-03-25 092626.png" alt="Promo cards wireframe" width="500">
+
+<img src="nourish/static/site_static/images/Screenshot 2024-03-25 093528.png" alt="Menu items wireframe " width="500">
+
+<img src="nourish/static/site_static/images/Screenshot 2024-03-25 093545.png" alt="Reviews wireframe" width="500">
+
+<img src="nourish/static/site_static/images/Screenshot 2024-03-25 093645.png" alt="Footer Wireframe" width="500">
+
 ## Features
 
 The Nourish Restaurant website is meticulously crafted to provide an enriching experience for visitors while showcasing the culinary delights and ambiance of the establishment. Tailored to meet the needs of both prospective diners and loyal patrons, the website serves as a digital gateway to the restaurant's offerings. Here's an overview of its key features:
