@@ -1,19 +1,22 @@
+from .models import Reservation
 from django.shortcuts import render
+from .forms import ReserveForm
 
-# Create your views here.
+from reservation.models import Reservation
 
 def reservation(request):
+    reservation_form = ReserveForm()
+
     if request.method == 'POST':
-        # Handle form submission for reservation
-        # Example:
-        # reservation_form = ReservationForm(request.POST)
-        # if reservation_form.is_valid():
-        #     reservation = reservation_form.save()
-        #     return render(request, 'reservation_success.html', {'reservation': reservation})
-        pass
-    else:
-        # Render reservation form
-        # Example:
-        # reservation_form = ReservationForm()
-        # return render(request, 'reservation.html', {'reservation_form': reservation_form})
-        pass
+        reservation_form = ReserveForm(request.method)
+        
+        
+        if reservation_form.is_valid():
+            reservation_form.save()
+
+    context = {'form':reservation_form}
+
+    return render(request, 'reservation/reservation.html', context)
+     
+        
+    

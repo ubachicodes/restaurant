@@ -34,22 +34,36 @@ window.addEventListener("scroll", function () {
 });
 
 
+// Form submission handler
+document.getElementById('reservation-form').addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent the default form submission
 
-/** Search box toggle */
+  // Validate the form fields
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var numPersons = document.getElementById('num_persons').value;
+  var date = document.getElementById('date').value;
+  var time = document.getElementById('time').value;
 
-const searchBtn = document.querySelector("[data-search-btn]");
-const searchContainer = document.querySelector("[data-search-container]");
-const searchSubmitBtn = document.querySelector("[data-search-submit-btn]");
-const searchCloseBtn = document.querySelector("[data-search-close-btn]");
+  if (name.trim() === '' || email.trim() === '' || numPersons.trim() === '' || date.trim() === '' || time.trim() === '') {
+    alert('Please fill in all fields.');
+    return;
+  }
 
-const searchBoxElems = [searchBtn, searchSubmitBtn, searchCloseBtn];
-
-for (let i = 0; i < searchBoxElems.length; i++) {
-  searchBoxElems[i].addEventListener("click", function () {
-    searchContainer.classList.toggle("active");
-    document.body.classList.toggle("active");
-  });
-}
+  // Submit the form using AJAX
+  var formData = new FormData(this);
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', this.action);
+  xhr.setRequestHeader('X-CSRFToken', document.querySelector('input[name="csrfmiddlewaretoken"]').value);
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      alert('Reservation submitted successfully!');
+    } else {
+      alert('An error occurred while submitting the reservation.');
+    }
+  };
+  xhr.send(formData);
+});
 
 /** Move cycle on scroll */
 

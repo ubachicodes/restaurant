@@ -10,7 +10,6 @@ urlpatterns = [
     path('', include('home.urls')),  # URL for the home page
     path('about/', include('about.urls')),  # URL for the about page
     path('meals/', include('meals.urls')),  # URL for the menu page
-    path('blog/', include('blog.urls')),  # URL for the blog page
     path('reservation/', include('reservation.urls')),  # URL for the reservation page
 ]
 
