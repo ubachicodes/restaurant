@@ -21,6 +21,7 @@ class Meals(models.Model):
     is_gluten_free = models.BooleanField(default=False)
     slug = models.SlugField(blank=True , null=True)
 
+
     def save (self, *args, **kwargs):
         if not self.slug and self.name :
             self.slug = slugify(self.name)
@@ -31,5 +32,5 @@ class Meals(models.Model):
         verbose_name = 'meal'
         verbose_name_plural = 'meals'
 
-    def _str_(self):
+    def __str__(self):
         return self.name

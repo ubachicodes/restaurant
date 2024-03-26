@@ -34,7 +34,7 @@ def register(request):
 
     context = {'form':form}
 
-    return render(request, 'templates/register.html', context=context)
+    return render(request, 'register.html', context=context)
 
 
 # Log in a user
@@ -61,7 +61,7 @@ def login(request):
     
     context = {'form':form}
 
-    return render(request, 'templates/login.html', context=context)
+    return render(request, 'login.html', context=context)
 
     
 # Dashboard
