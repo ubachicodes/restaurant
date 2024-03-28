@@ -1,13 +1,10 @@
 <h1>Meal Details</h1>
 
+<h2>{{ meal_detail.name }}</h2>
 
+<h3>Description: {{ meal_detail.description }}</h3>
+<h3>Calories: {{ meal_detail.calories }}</h3>
+<h3>Price: {{ meal_detail.price }}</h3>
+<h3>Vegetarian: {{ meal_detail.is_vegetarian }}</h3>
 
-
-<h2>{{meal_detail}}</h2>
-
-<h3>{{meal_detail.description}}</h3>
-<h3>{{meal_detail.calories}}</h3>
-<h3>{{meal_detail.price}}</h3>
-<h3>{{meal_detail.is_vegetarian}}</h3>
-
-<img src="{{meal_detail.image.url}}" alt="Meal image">
+<img src="{{ meal_detail.image.url }}" alt="Meal image">
