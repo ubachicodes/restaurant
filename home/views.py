@@ -38,8 +38,7 @@ def register(request):
 
 
 # Log in a user
-
-def login(request):
+def user_login(request):
     form = LoginForm()
 
     if request.method == "POST":
@@ -57,23 +56,17 @@ def login(request):
                 auth.login(request, user)
 
                 return redirect("dashboard")
-
     
     context = {'form':form}
 
     return render(request, 'login.html', context=context)
 
+
     
 # Dashboard
-
 @login_required(login_url='login')
 def dashboard(request):
-
-    return render(request, 'templates/dashboard.html')
-
-
-
-
+    return render(request, 'dashboard.html')
 
 
 

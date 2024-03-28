@@ -7,10 +7,10 @@ def meal_list(request):
     meal_list = Meals.objects.all()
 
     context = {
-        "meals": meal_list
+        'meal_list': meal_list ,
     }
 
-    return render(request, 'menu.html', {'menu_items': menu_items})
+    return render(request, 'meals/list.html', context)
 
 
 

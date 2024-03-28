@@ -3,7 +3,7 @@ from . import views
 
 
 urlpatterns = [
-    path(r'^meals/', views.meal_list),
-    path('<slug:slug>', views.meal_detail, name='meal_detail'),
-
+    path('meals/', views.meal_list, name='meals'),
+    path('<slug:slug>/', views.meal_detail, name='meal_detail'),  # URL for displaying meal details
 ]
+
