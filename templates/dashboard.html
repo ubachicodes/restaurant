@@ -1,10 +1,18 @@
-{% extends base.html %}
-
+{% extends 'base.html' %}
 
 {% block content %}
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">{{ user }}'s Dashboard</div>
 
-
-    <h1> Welcome to the dashboard page! {{user}}</h1>
-
-
+                    <div class="card-body">
+                        <h1>Welcome to the dashboard page!</h1>
+                        <p>This is where you can view and manage your account information, orders, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

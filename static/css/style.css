@@ -1,0 +1,76 @@
+/* Navbar */
+.navbar {
+  background-color: #343a40 !important; /* Dark background color for the navbar */
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-color: #fff; /* White color for the navbar toggler icon */
+}
+
+/* Header */
+.header {
+  background-color: #343a40; /* Dark background color for the header */
+  color: #fff; /* Text color for the header */
+  padding: 50px 0; /* Add padding to the header */
+}
+
+.logo {
+  color: #fff; /* Text color for the logo */
+  text-decoration: none; /* Remove underline from the logo */
+  font-size: 24px; /* Font size for the logo */
+}
+
+.span {
+  color: #ffc107; /* Yellow color for the dot in the logo */
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40; /* Dark background color for the footer */
+  color: #fff; /* Text color for the footer */
+  padding: 50px 0; /* Add padding to the footer */
+}
+
+.footer-brand {
+  margin-bottom: 30px; /* Add margin to the footer brand */
+}
+
+.social-link {
+  color: #fff; /* Text color for the social media icons */
+  font-size: 24px; /* Font size for the social media icons */
+  margin-right: 20px; /* Add margin between social media icons */
+}
+
+.footer-list-title {
+  color: #fff; /* Text color for the footer list title */
+  margin-bottom: 20px; /* Add margin to the footer list title */
+}
+
+.footer-list-item {
+  color: #ced4da; /* Text color for the footer list items */
+  margin-bottom: 10px; /* Add margin to the footer list items */
+}
+
+.footer-bottom {
+  background-color: #212529; /* Darker background color for the bottom section */
+  padding: 20px 0; /* Add padding to the bottom section */
+}
+
+/* Back to Top Button */
+.back-top-btn {
+  background-color: #343a40; /* Dark background color for the back to top button */
+  color: #fff; /* Text color for the back to top button */
+  border: none; /* Remove border from the back to top button */
+  border-radius: 50%; /* Add border-radius to create a circular button */
+  padding: 10px; /* Add padding to the back to top button */
+  position: fixed; /* Set the position of the back to top button */
+  bottom: 20px; /* Set the distance from the bottom */
+  right: 20px; /* Set the distance from the right */
+  z-index: 9999; /* Set the z-index to ensure the button appears on top of other elements */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Add transition effect to background color */
+}
+
+.back-top-btn:hover {
+  background-color: #23272b; /* Darken background color on hover */
+}
