@@ -90,3 +90,38 @@ window.addEventListener("scroll", function () {
   }
 
 });
+
+// Function to update table options based on selected date and time
+function updateTableOptions() {
+  var date = document.getElementById("date").value;
+  var time = document.getElementById("time").value;
+  var tableSelect = document.getElementById("table");
+
+  // Make AJAX request to retrieve available tables based on date and time
+  // Replace the AJAX URL with your endpoint for retrieving table availability
+  var url = `/api/tables?date=${date}&time=${time}`;
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      // Clear existing options
+      tableSelect.innerHTML = '<option value="" selected disabled>Select a table</option>';
+
+      // Add new options based on retrieved data
+      data.forEach(table => {
+        var option = document.createElement("option");
+        option.value = table.id;
+        option.text = table.number + " (Capacity: " + table.capacity + ")";
+        tableSelect.appendChild(option);
+      });
+    })
+    .catch(error => {
+      console.error('Error fetching table data:', error);
+    });
+}
+
+// Add event listeners to date and time inputs to update table options
+document.getElementById("date").addEventListener("change", updateTableOptions);
+document.getElementById("time").addEventListener("change", updateTableOptions);
+
+// Initial call to update table options based on default date and time values
+updateTableOptions();

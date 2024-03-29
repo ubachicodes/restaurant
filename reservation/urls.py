@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('reservation/', views.reservation, name='reservation'),
-    # Other URL patterns for your application...
+    path('api/tables', views.tables_api, name='tables_api'),
 ]
