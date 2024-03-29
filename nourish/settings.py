@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'home',
     'about',
     'reservation',
+    'contact',
 
     'crispy_forms',
 ]
@@ -145,7 +146,11 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media' )
 
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

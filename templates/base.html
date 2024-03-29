@@ -39,7 +39,7 @@
             <a class="nav-link" href="{% url 'reservation' %}">Reservation</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#footer">Contact Us</a>
+            <a class="nav-link" href="{% url 'contact_form' %}">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -85,7 +85,7 @@
         <div class="row">
             <div class="col-md-4">
               <div class="footer-brand">
-                <a href="#" class="logo">Nourish<span class="span">.</span></a>
+                <a href="{% url 'home' %}" class="logo">Nourish<span class="span">.</span></a>
                 <p class="footer-text">Where every dish is crafted with care to nourish both body and soul.</p>
                 <ul class="social-list list-unstyled">
                   <li><a href="https://www.facebook.com/" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>

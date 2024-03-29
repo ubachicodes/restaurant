@@ -25,7 +25,6 @@
 }
 
 /* Footer Styling */
-/* Footer Styling */
 .footer {
   background-color: #343a40; /* Change to your desired color */
   color: #fff; /* Change to your desired text color */
@@ -85,4 +84,83 @@
 
 .back-top-btn:hover {
   background-color: #23272b; /* Darken background color on hover */
+}
+
+
+/* Success Page Styles */
+.success-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.success-heading {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.success-message {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contact Form Styles */
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-form-heading {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .success-container, .contact-form-container {
+    padding: 10px;
+  }
 }
