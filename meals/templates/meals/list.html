@@ -1,53 +1,36 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <!-- Food Menu -->
+    <h2>Our Dishes</h2>
 
-<!-- Food Menu -->
-<h2>Our Dishes</h2>
+    <!-- Iterate over categories -->
+    <ul class="nav nav-pills nav-fill">
+      {% for category in categories %}
+      <li class="nav-item">
+        <a class="nav-link" href="#{{ category.slug }}">{{ category.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
 
-<ul class="nav nav-pills nav-fill">
-  <li class="nav-item">
-    <a class="nav-link" href="#">Pizzas</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Drinks</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Salads</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Desserts</a>
-  </li>
-</ul>
-
-<ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
-  {% for category in categories %}
-<li class="nav-item">
-  <a class="nav-link" id="{{ category }}-tab" data-toggle="pill" href="#{{ category }}" role="tab" aria-controls="{{ category }}" aria-selected="true">{{ category }}</a>
-</li>
-{% endfor %}
-</ul>
-
-<div class="tab-content" id="pills-tabcontent">
-  {% for category in categories %}
-  <div class="tab-pane fade show" id="{{ category }}" role="tabpanel" aria-labelledby="{{ category }}-tab">
-    {% for meal in meal_list %}
-    {% if meal.category == category %}
-    <div class="d-block d-md-flex menu-item">
-      <div class="text order-1 mb-3">
-        <h3><a href="{% url 'meals:meal_detail' meal.slug %}">{{ meal.name }}</a></h3>
-        <p>{{ meal.description }}</p>
+    <div class="tab-content" id="pills-tabcontent">
+      <!-- Iterate over categories -->
+      {% for category in categories %}
+      <div class="tab-pane fade show" id="{{ category.slug }}" role="tabpanel" aria-labelledby="{{ category.slug }}-tab">
+        <!-- Iterate over items in the current category -->
+        {% for item in category.items.all %}
+        <div class="d-block d-md-flex menu-item">
+          <div class="text order-1 mb-3">
+            <h3><a href="{% url 'meals:meal_detail' item.slug %}">{{ item.name }}</a></h3>
+            <p>{{ item.description }}</p>
+          </div>
+          <div class="price order-2">
+            <strong>£{{ item.price }}</strong>
+          </div>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+        {% endfor %}
       </div>
-      <div class="price order-2">
-        <strong>£{{ meal.price }}</strong>
-      </div>
-      <a href="#" class="btn btn-primary">Order Now</a>
+      {% endfor %}
     </div>
-    </div> <!-- menu item -->
-    {% endif %}
-    {% endfor %}
-  </div>
-  {% endfor %}
-</div>
-
 {% endblock %}

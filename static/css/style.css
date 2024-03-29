@@ -24,37 +24,49 @@
   color: #ffc107; /* Yellow color for the dot in the logo */
 }
 
-/* Footer */
+/* Footer Styling */
+/* Footer Styling */
 .footer {
-  background-color: #343a40; /* Dark background color for the footer */
-  color: #fff; /* Text color for the footer */
-  padding: 50px 0; /* Add padding to the footer */
+  background-color: #343a40; /* Change to your desired color */
+  color: #fff; /* Change to your desired text color */
+  padding: 50px 0; /* Adjust padding as needed */
 }
 
 .footer-brand {
-  margin-bottom: 30px; /* Add margin to the footer brand */
+  margin-bottom: 30px; /* Adjust spacing as needed */
+}
+
+.footer-text {
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.social-list {
+  display: flex;
+  gap: 10px; /* Adjust spacing between social links */
 }
 
 .social-link {
-  color: #fff; /* Text color for the social media icons */
-  font-size: 24px; /* Font size for the social media icons */
-  margin-right: 20px; /* Add margin between social media icons */
+  color: #fff; /* Change to your desired text color */
 }
 
 .footer-list-title {
-  color: #fff; /* Text color for the footer list title */
-  margin-bottom: 20px; /* Add margin to the footer list title */
+  color: #fff; /* Change to your desired text color */
+  margin-bottom: 20px; /* Adjust spacing as needed */
 }
 
 .footer-list-item {
-  color: #ced4da; /* Text color for the footer list items */
-  margin-bottom: 10px; /* Add margin to the footer list items */
+  margin-bottom: 10px; /* Adjust spacing as needed */
 }
 
 .footer-bottom {
-  background-color: #212529; /* Darker background color for the bottom section */
-  padding: 20px 0; /* Add padding to the bottom section */
+  background-color: #343a40; /* Change to your desired color */
+  padding: 20px 0; /* Adjust padding as needed */
 }
+
+.copyright-text {
+  margin-bottom: 0; /* Remove default margin */
+}
+
 
 /* Back to Top Button */
 .back-top-btn {
