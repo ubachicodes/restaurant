@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block content %}
+{% block body %}
     <!-- Food Menu -->
     <h2>Our Dishes</h2>
 
@@ -27,7 +27,7 @@
           <div class="price order-2">
             <strong>£{{ item.price }}</strong>
           </div>
-          <a href="#" class="btn btn-primary">Order Now</a>
+          <a href="{% url 'reservation' %}" class="btn btn-primary">Book Now</a>
         </div>
         {% endfor %}
       </div>

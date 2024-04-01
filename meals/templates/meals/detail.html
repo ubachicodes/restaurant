@@ -1,3 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
 <h1>Meal Details</h1>
 
 <h2>{{ meal_detail.name }}</h2>
@@ -8,3 +13,5 @@
 <h3>Vegetarian: {{ meal_detail.is_vegetarian }}</h3>
 
 <img src="{{ meal_detail.image.url }}" alt="Meal image">
+
+{% endblock %}
