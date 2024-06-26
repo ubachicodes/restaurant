@@ -39,9 +39,6 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'reservation' %}">Reservation</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'contact_form' %}">Contact Us</a>
-          </li>
         </ul>
       </div>
       <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
@@ -77,7 +74,10 @@
     </div>
   </header>
 
-  
+
+   {% block content %}
+      <!-- Content Goes here -->
+    {% endblock content %}
 
   <!-- Footer -->
 
